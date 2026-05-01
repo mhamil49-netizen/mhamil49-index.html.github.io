@@ -1,0 +1,267 @@
+/* Nav bar */
+.topnav {
+  background-color: #fff0f1;
+  overflow: hidden;
+  contain: content;
+}
+
+.topnav a {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffa3d6;
+  color: white;
+}
+
+/* Image */
+
+.hero-image {
+  background: linear-gradient(to bottom, #000, #ffa3d6);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  padding: 200px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ffa3d6;
+  padding: 20px;
+  text-align: center;
+}
+
+th {
+  background-color: #fff0f1;
+}
+
+
+/* Quote */
+.container {
+  border: 0 solid #ffa3d6;
+  background-color: white;
+  border-radius: 0px;
+  padding: 2px;
+  margin: 0;
+}
+
+.container::after {
+  content:none;
+  clear: both;
+  display: table;
+}
+
+.container span {
+  font-size: 20px;
+  text-align: right;
+  padding: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    text-align: right;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: flex;
+  }
+}
+
+/* image */
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #fff0f1;
+  border-radius: 2px;
+}
+
+/* About */
+.column {
+  float: left;
+  width: 33.3%;
+  margin: 0 auto 16px;
+  padding: 0 8px;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: black
+}
+
+p:hover {
+  overflow: visible;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #ffa3d6;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: right;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 10px;
+  border: 3px dotted #ffa3d6;
+  border-radius: 4px;
+}
+
+
+/* Beach */
+.beach-image {
+  width: 45%;
+  height: 50%;
+ float: right;
+}
+
+/* Content */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff0f1;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown img {
+  width: 250px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff0f1;
+  color: #000;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover img {
+  transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*footer*/
+footer {
+  background-color: #fff0f1;
+  padding: 100px;
+  text-align: center;
+}
+
+.map-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
